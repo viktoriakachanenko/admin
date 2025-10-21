@@ -1,5 +1,5 @@
 export const Sidebar = () => {
     return (
-        <h1>Sidebar</h1>
+        <h1>Sidebar 1</h1>
     )
 }
