@@ -1,0 +1,31 @@
+@use "src/styles/variables" as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: $color_purple;
+
+  &:hover {
+    background-color: $color_purple_dark;
+  }
+}
+
+.small {
+  height: 18px;
+}
+
+.large {
+  height: 40px;
+}
+
+.startIcon {
+  padding-right: 5px;
+}
