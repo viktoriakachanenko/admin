@@ -1,5 +1,3 @@
 export const Sidebar = () => {
-    return (
-        <h1>Sidebar</h1>
-    )
-}
+  return <h1>Sidebar</h1>;
+};
