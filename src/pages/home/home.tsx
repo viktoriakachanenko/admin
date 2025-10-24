@@ -1,4 +1,6 @@
 import { Avatar } from "src/ui/avatar";
+import { Button } from "src/ui/button";
+import { IconUser } from "src/ui/icons/icon-user";
 
 export const Home = () => {
   return (
@@ -12,6 +14,9 @@ export const Home = () => {
         alt="avatar"
         size="large"
       />
+      <Button size="small" startIcon={<IconUser />} onClick={() => {}}>
+        Save
+      </Button>
     </>
   );
 };
