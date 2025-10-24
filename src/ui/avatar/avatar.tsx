@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import styles from "./avatar.module.scss";
 
 type Props = {
@@ -7,11 +9,10 @@ type Props = {
 };
 
 export const Avatar = ({ src, alt, size = "small" }: Props) => {
-  return (
-    <img
-      className={`${styles.img} ${size === "small" ? styles.small : styles.large}`}
-      src={src}
-      alt={alt}
-    />
+  const classes = clsx(
+    styles.img,
+    size === "small" && styles.small,
+    size === "large" && styles.large,
   );
+  return <img className={classes} src={src} alt={alt} />;
 };
