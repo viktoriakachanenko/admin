@@ -1,6 +1,7 @@
 import { Avatar } from "src/ui/avatar";
 import { Button } from "src/ui/button";
 import { IconUser } from "src/ui/icons/icon-user";
+import { Spinner } from "src/ui/spinner";
 
 export const Home = () => {
   return (
@@ -14,9 +15,18 @@ export const Home = () => {
         alt="avatar"
         size="large"
       />
-      <Button size="small" startIcon={<IconUser />} onClick={() => {}}>
+      <Button
+        size="small"
+        startIcon={<IconUser />}
+        onClick={() => {}}
+        loading={true}
+      >
         Save
       </Button>
+      <Spinner size="small" />
+      <Spinner size="medium" />
+      <Spinner size="large" />
+      <Spinner size="large" theme="secondary" />
     </>
   );
 };
