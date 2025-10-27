@@ -1,13 +1,16 @@
 import React from "react";
-import styles from "./button.module.scss";
 
 import clsx from "clsx";
+import { Spinner } from "../spinner";
+
+import styles from "./button.module.scss";
 
 type Props = {
   onClick: () => void;
   children: React.ReactNode;
   size?: "small" | "large";
   startIcon?: React.ReactNode;
+  loading?: boolean;
 };
 
 export const Button = ({
@@ -15,6 +18,7 @@ export const Button = ({
   size = "large",
   startIcon,
   onClick,
+  loading = false,
 }: Props) => {
   const classes = clsx(
     styles.button,
@@ -23,8 +27,11 @@ export const Button = ({
   );
   return (
     <button className={classes} onClick={onClick}>
-      {startIcon && <span className={styles.startIcon}>{startIcon}</span>}
-      {children}
+      {!loading && startIcon && (
+        <span className={styles.startIcon}>{startIcon}</span>
+      )}
+      {!loading && children}
+      {loading && <Spinner theme="secondary" size="small" />}
     </button>
   );
 };
