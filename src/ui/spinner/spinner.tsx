@@ -1,6 +1,6 @@
-import styles from "./spinner.module.scss";
-
 import clsx from "clsx";
+
+import styles from "./spinner.module.scss";
 
 type Props = {
   size?: "small" | "medium" | "large";
