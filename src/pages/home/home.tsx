@@ -1,12 +1,18 @@
-import { Avatar } from "src/ui/avatar";
-import { Button } from "src/ui/button";
-import { IconUser } from "src/ui/icons/icon-user";
-import { Spinner } from "src/ui/spinner";
-import { Toggle } from "src/ui/toggle";
+import { Avatar } from 'src/ui/avatar';
+import { Button } from 'src/ui/button';
+import { IconUser } from 'src/ui/icons/icon-user';
+import { Spinner } from 'src/ui/spinner';
+import { Toggle } from 'src/ui/toggle';
+import { Dropdown } from 'src/ui/dropdown';
 
-import styles from "./home.module.scss";
+import styles from './home.module.scss';
 
 export const Home = () => {
+  const items = [
+    { id: 1, value: 'Monday' },
+    { id: 2, value: 'Tuesday' },
+  ];
+
   return (
     <div className={styles.root}>
       <Avatar
@@ -30,6 +36,13 @@ export const Home = () => {
       <Spinner size="small" />
       <br />
       <Toggle onChange={(value) => console.log(value)} checked={false} />
+      <br />
+      <br />
+      <Dropdown
+        selectItemId={2}
+        items={items}
+        onChange={(item) => console.log(item)}
+      />
     </div>
   );
 };

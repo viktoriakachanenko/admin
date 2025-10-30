@@ -1,4 +1,4 @@
-@use "src/styles/variables" as *;
+@use 'src/styles/variables' as *;
 
 .loader {
   display: block;
@@ -7,7 +7,7 @@
   animation: rotate 1s linear infinite;
 
   &:before {
-    content: "";
+    content: '';
     box-sizing: border-box;
     position: absolute;
     inset: 0px;

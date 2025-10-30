@@ -1,0 +1,43 @@
+@use 'src/styles/variables' as *;
+
+.dropdown {
+  width: 160px;
+  height: 35px;
+  font-size: 15px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $color_grey;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: 160px;
+  height: 35px;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.iconArrowTop {
+  transform: rotate(180deg) translateY(2px);
+}
+
+.list {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.list li {
+  padding: 8px 12px;
+  background-color: $color_grey;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}

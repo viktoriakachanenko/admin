@@ -1,29 +1,28 @@
-import React from "react";
+import React from 'react';
+import styles from './button.module.scss';
 
-import clsx from "clsx";
-import { Spinner } from "../spinner";
-
-import styles from "./button.module.scss";
+import clsx from 'clsx';
+import { Spinner } from '../spinner';
 
 type Props = {
   onClick: () => void;
   children: React.ReactNode;
-  size?: "small" | "large";
+  size?: 'small' | 'large';
   startIcon?: React.ReactNode;
   loading?: boolean;
 };
 
 export const Button = ({
   children,
-  size = "large",
+  size = 'large',
   startIcon,
   onClick,
   loading = false,
 }: Props) => {
   const classes = clsx(
     styles.button,
-    size === "small" && styles.small,
-    size === "large" && styles.large,
+    size === 'small' && styles.small,
+    size === 'large' && styles.large,
   );
   return (
     <button className={classes} onClick={onClick}>
