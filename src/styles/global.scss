@@ -1,9 +1,8 @@
-@forward "./reset";
-@forward "./fonts";
+@forward './reset';
+@forward './fonts';
 
-@use "./variables" as var;
+@use './variables' as var;
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: rgb(226, 172, 240);
+  font-family: 'Roboto', sans-serif;
 }

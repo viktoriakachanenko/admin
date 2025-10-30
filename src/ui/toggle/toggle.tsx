@@ -1,5 +1,5 @@
-import { useState } from "react";
-import styles from "./toggle.module.scss";
+import { useState } from 'react';
+import styles from './toggle.module.scss';
 
 type Props = {
   checked: boolean;

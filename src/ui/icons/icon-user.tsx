@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 interface Props extends React.SVGProps<SVGSVGElement> {
   size?: number;
   color?: string;
 }
 
-export const IconUser = ({ size = 16, color = "#F6F6F6", ...props }: Props) => {
+export const IconUser = ({ size = 16, color = '#F6F6F6', ...props }: Props) => {
   return (
     <svg
       width={size}
