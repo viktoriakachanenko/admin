@@ -1,0 +1,33 @@
+@use 'src/styles/variables' as *;
+
+
+.root {
+  display: flex;         
+  align-items: center;
+  gap: 32px;             
+}
+
+.input {
+  font-size: 42px;
+  width: 360px;
+  padding: 8px 15px;
+  border-radius: 10px;
+
+  &.active {
+    border: 1px solid black;
+  }
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
