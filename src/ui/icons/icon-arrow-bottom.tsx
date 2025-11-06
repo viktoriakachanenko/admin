@@ -6,9 +6,9 @@ export const IconArrowBottom = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M6 9L12 15L18 9"
         stroke="#0832DE"
-        stroke-width="1.3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
