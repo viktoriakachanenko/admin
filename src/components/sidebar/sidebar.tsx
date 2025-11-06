@@ -3,14 +3,13 @@ import clsx from 'clsx';
 import { useLocation } from 'react-router-dom';
 
 import { Avatar } from 'src/ui/avatar';
-
 import { IconHouse } from 'src/ui/icons/icon-house';
 import { IconSetting } from 'src/ui/icons/icon-setting';
 import { IconUsers } from 'src/ui/icons/icon-users';
 import { IconBilling } from 'src/ui/icons/icon-billing';
+import { IconSingOut } from 'src/ui/icons/icon-sing-out';
 
 import styles from './sidebar.module.scss';
-import { IconSingOut } from 'src/ui/icons/icon-sing-out';
 
 const list = [
   {
