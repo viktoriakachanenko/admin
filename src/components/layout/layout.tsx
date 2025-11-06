@@ -1,11 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from '../sidebar';
 
+import styles from './layout.module.scss';
+
 export const Layout = () => {
   return (
-    <div>
+    <div className={styles.layout}>
       <Sidebar />
-      <Outlet />
+      <div className={styles.main}>
+        <Outlet />
+      </div>
     </div>
   );
 };

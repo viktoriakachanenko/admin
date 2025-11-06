@@ -7,16 +7,16 @@ export const IconFotoAvatar = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M88.3334 81.6667C88.3334 82.5507 87.9822 83.3986 87.3571 84.0237C86.7319 84.6488 85.8841 85 85 85H55.0001C54.116 85 53.2681 84.6488 52.643 84.0237C52.0179 83.3986 51.6667 82.5507 51.6667 81.6667V63.3333C51.6667 62.4493 52.0179 61.6014 52.643 60.9763C53.2681 60.3512 54.116 60 55.0001 60H61.6667L65 55H75L78.3334 60H85C85.8841 60 86.7319 60.3512 87.3571 60.9763C87.9822 61.6014 88.3334 62.4493 88.3334 63.3333V81.6667Z"
         stroke="#668CAE"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M70.0001 78.3333C73.682 78.3333 76.6668 75.3486 76.6668 71.6667C76.6668 67.9848 73.682 65 70.0001 65C66.3182 65 63.3334 67.9848 63.3334 71.6667C63.3334 75.3486 66.3182 78.3333 70.0001 78.3333Z"
         stroke="#668CAE"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
