@@ -1,10 +1,9 @@
 @use 'src/styles/variables' as *;
 
-
 .root {
-  display: flex;         
+  display: flex;
   align-items: center;
-  gap: 32px;             
+  gap: 32px;
 }
 
 .input {
