@@ -1,0 +1,62 @@
+@use 'src/styles/variables' as *;
+
+.root {
+  margin-top: 32px;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  background-color: $color_grey;
+  border-radius: 8px;
+  padding-top: 23px;
+  width: 174px;
+  height: 220px;
+}
+
+.iconDelete {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.role {
+  color: $color_grey_light;
+}
+
+.addAdmin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid $color_blue;
+  background: $color_white;
+  color: $color_blue;
+  width: 174px;
+  height: 220px;
+  font-size: 12px;
+  cursor: pointer;
+}
