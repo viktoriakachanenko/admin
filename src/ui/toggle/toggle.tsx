@@ -1,18 +1,15 @@
-import { useState } from 'react';
 import styles from './toggle.module.scss';
 
 type Props = {
-  checked: boolean;
-  onChange: (value: boolean) => void;
+  isChecked: boolean;
+  onChange: () => void;
 };
 
-export const Toggle = ({ onChange, checked }: Props) => {
-  const [isChecked, setIsChecked] = useState(checked);
-
+export const Toggle = ({ onChange, isChecked }: Props) => {
   const handleOnChange = () => {
-    setIsChecked(!isChecked);
-    onChange(!isChecked);
+    onChange();
   };
+
   return (
     <label className={styles.switch}>
       <input onChange={handleOnChange} checked={isChecked} type="checkbox" />

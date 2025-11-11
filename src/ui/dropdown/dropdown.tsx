@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 import styles from './dropdown.module.scss';
 
-type DropdownItem = {
+export type DropdownItem = {
   id: number | string;
   value: number | string;
 };
