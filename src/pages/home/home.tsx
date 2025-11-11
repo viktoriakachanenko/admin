@@ -1,5 +1,6 @@
 import { WorkSpaceName } from 'src/components/workSpaceName';
 import { WorkSpaceAdmins } from 'src/components/workSpaceAdmins';
+import { Settings } from 'src/components/settings/settings';
 
 import styles from './home.module.scss';
 
@@ -8,6 +9,7 @@ export const Home = () => {
     <div className={styles.root}>
       <WorkSpaceName />
       <WorkSpaceAdmins />
+      <Settings />
     </div>
   );
 };

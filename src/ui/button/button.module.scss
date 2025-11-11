@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  width: 100%;
+  width: auto;
   font-size: 15px;
   font-weight: 500;
   color: #fff;
@@ -23,7 +23,7 @@
 }
 
 .large {
-  height: 40px;
+  padding: 11px 76px;
 }
 
 .startIcon {

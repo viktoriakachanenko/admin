@@ -1,0 +1,27 @@
+@use 'src/styles/variables' as *;
+
+.root {
+  margin-top: 32px;
+}
+
+.settings {
+  margin-top: 26px;
+}
+
+.settingItem {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+
+.settingItem:not(:first-child) {
+  margin-top: 12px;
+}
+
+.settingItem span {
+  font-size: 18px;
+}
+
+.buttonSave {
+  margin-top: 32px;
+}
