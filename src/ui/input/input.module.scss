@@ -1,0 +1,29 @@
+@use 'src/styles/variables' as *;
+
+.root {
+  margin-top: 24px;
+  margin-left: 14px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.input {
+  padding-left: 45px;
+  height: 40px;
+  width: 736px;
+  border-radius: 8px;
+  border: 1px solid $color_beige;
+
+  &::placeholder {
+    color: $color_beige;
+    font-size: 15px;
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 11px;
+}
