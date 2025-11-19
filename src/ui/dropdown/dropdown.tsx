@@ -14,9 +14,15 @@ type Props = {
   items: DropdownItem[];
   onChange: (item: DropdownItem) => void;
   selectItemId?: DropdownItem['id'];
+  children?: React.ReactNode;
 };
 
-export const Dropdown = ({ items, onChange, selectItemId }: Props) => {
+export const Dropdown = ({
+  items,
+  onChange,
+  selectItemId,
+  children,
+}: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<DropdownItem | null>(null);
 
@@ -44,7 +50,7 @@ export const Dropdown = ({ items, onChange, selectItemId }: Props) => {
   return (
     <div className={styles.dropdown}>
       <button className={styles.button} onClick={handleOnClick}>
-        {selected ? selected.value : '---'}
+        {selected ? selected.value : children}
         <span className={classes}>
           <IconArrowBottom width={25} height={25} />
         </span>

@@ -1,0 +1,80 @@
+@use 'src/styles/variables' as *;
+
+.root {
+  margin-top: 24px;
+}
+
+.partOne {
+  display: flex;
+  align-items: center;
+}
+
+.btnUser {
+  margin-left: 24px;
+}
+
+.btnIconDots {
+  position: relative;
+  background: $color_white_dark;
+  margin-left: 10px;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.btnIconDots:hover {
+  background: #f1f1f1;
+}
+
+.iconDots {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  top: 42px;
+  width: 40px;
+  border-radius: 8px;
+  z-index: 999;
+  min-width: 100%;
+}
+
+.menuList {
+  background-color: $color_white_dark;
+  border-radius: 8px;
+}
+
+.menuItem {
+  border-radius: 8px;
+  border: 1px solid $color_grey;
+  padding: 5px;
+}
+
+.partTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.dropdownWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btnIconUser {
+  background-color: $color_white_dark;
+  padding: 8px;
+  border-radius: 8px;
+}

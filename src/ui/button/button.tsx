@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './button.module.scss';
-
-import clsx from 'clsx';
 import { Spinner } from '../spinner';
+import clsx from 'clsx';
+
+import styles from './button.module.scss';
 
 type Props = {
   onClick: () => void;

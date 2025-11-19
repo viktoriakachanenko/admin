@@ -21,16 +21,14 @@ export const Input = ({
 
   return (
     <div className={styles.root}>
-      <div className={styles.wrapper}>
-        <input
-          className={styles.input}
-          type={type}
-          value={value}
-          onChange={handleChange}
-          placeholder={placeholder}
-        />
-        {icon && <span className={styles.icon}>{icon}</span>}
-      </div>
+      <input
+        className={styles.input}
+        type={type}
+        value={value}
+        onChange={handleChange}
+        placeholder={placeholder}
+      />
+      {icon && <span className={styles.icon}>{icon}</span>}
     </div>
   );
 };
