@@ -1,0 +1,35 @@
+@use 'src/styles/variables' as *;
+
+.table {
+  margin-top: 34px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.table th {
+  border-bottom: 1px solid $color_grey_table;
+  padding: 22px 8px;
+  text-align: center;
+  color: $color_grey_light;
+}
+
+.table td {
+  padding: 22px 8px;
+  text-align: center;
+}
+
+.userAvatar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.checkbox {
+  margin-right: 14px;
+}
