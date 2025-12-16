@@ -4,6 +4,7 @@ import { Filters } from 'src/components/filters';
 import { Table } from 'src/components/table';
 import { useEffect, useState } from 'react';
 import { Spinner } from 'src/ui/spinner';
+import { LineChart } from 'src/components/lineChart/lineChart';
 
 type Coment = {
   postId: number;
@@ -67,6 +68,9 @@ export const Users = () => {
     <>
       <Counter people={12} departmens={5} guests={0} />
       <Filters />
+
+      <LineChart />
+
       {loading && <Spinner />}
       {error && <h1>Error</h1>}
       {!loading && !error && <Table columns={columns} data={coment} />}
