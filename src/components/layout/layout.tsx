@@ -7,9 +7,9 @@ export const Layout = () => {
   return (
     <div className={styles.layout}>
       <Sidebar />
-      <div className={styles.main}>
+      <main className={styles.main}>
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 };
