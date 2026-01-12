@@ -1,14 +1,21 @@
 @use 'src/styles/variables' as *;
 
 .sidebar {
-  width: 235px;
-  background-color: $color_grey;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  width: 235px;
+  background-color: $color_grey;
   padding: 32px;
   font-size: 16px;
+  transition: width 0.2s ease;
+}
+
+.sidebar.exit {
+  width: 120px;
+
+  .text {
+    display: none;
+  }
 }
 
 .top {
@@ -19,10 +26,12 @@
 }
 
 .list {
+  margin-top: 50px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .item a {
@@ -39,9 +48,18 @@
   color: $color_white;
 }
 
+.bottom {
+  margin-top: auto;
+  cursor: pointer;
+}
+
 .signOut {
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+}
+
+.expanded {
+  margin-top: 10px;
 }
