@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { Avatar } from 'src/ui/avatar';
 import { IconHouse } from 'src/ui/icons/icon-house';
